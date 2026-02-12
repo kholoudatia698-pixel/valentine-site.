@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>ادخل كلمة السر ❤️✨</h2>
+  <input type="password" id="password" placeholder="كلمة السر">
+  <button onclick="checkPassword()">افتح قلبي ❤️</button>
+</div>
+
+<div id="content" style="display:none;">
+
+  <h1 id="mainTitle">عيد حب سعيد يا روحي 💍</h1>
+
+  <div class="section">
+    <h2>من يوم خطوبتنا ☁️</h2>
+    <div id="counter"></div>
+  </div>
+
+  <div class="section">
+    <h2>من قلبي لك 💌</h2>
+    <p id="loveText"></p>
+  </div>
+
+  <div class="section">
+    <h2>ذكرياتنا ❤️</h2>
+    <img id="slider" src="https://i.ibb.co/ch7SMf6D/IMG-20260212-WA0001.jpg" alt="صورة">
+  </div>
+
+  <div class="section">
+    <h2>استمع لأغنيتنا 🎶</h2>
+    <div style="max-width:660px; margin:auto; margin-top:20px;">
+      <iframe allow="autoplay *; encrypted-media *;" 
+              frameborder="0" 
+              height="150" 
+              style="width:100%; max-width:660px; overflow:hidden; background: transparent;" 
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+              src="https://embed.music.apple.com/eg/song/7obk-rezk/1790689833?l=ar">
+      </iframe>
+    </div>
+  </div>
+
+  <h2 id="endingText">Happy Valentine’s Day My Love 💌</h2>
+  
+</div>
+
+<div class="confetti"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

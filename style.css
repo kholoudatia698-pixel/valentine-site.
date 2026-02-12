@@ -1,0 +1,51 @@
+body {
+  margin:0;
+  font-family: Arial,sans-serif;
+  direction:rtl;
+  text-align:center;
+  color:white;
+  background: linear-gradient(-45deg,#ff99aa,#ff6699,#ff3366,#ff66aa);
+  background-size:400% 400%;
+  animation:gradientBG 15s ease infinite;
+  overflow-x:hidden;
+}
+
+@keyframes gradientBG{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+h1, h2, p, #counter, #loveText, #endingText {
+  color: white;
+  text-shadow: 0 0 5px #ff3366, 0 0 10px #ff6699;
+}
+
+#login {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#ff99aa,#ff6699,#ff3366,#ff66aa);
+}
+
+#login h2 { font-size:36px; margin-bottom:20px; }
+#login input { font-size:20px; padding:15px; width:250px; border:none; border-radius:10px; margin:10px; }
+#login button { font-size:20px; padding:12px 30px; border-radius:25px; background:#ffffff33; color:white; cursor:pointer; backdrop-filter:blur(5px); }
+
+#content h1 { font-size:48px; }
+#content h2 { font-size:40px; margin:30px 0 20px 0; }
+#loveText, #counter { font-size:24px; }
+
+#endingText { font-size:32px; margin-top:50px; animation:moveText 4s linear infinite alternate; }
+@keyframes moveText { 0%{transform:translateX(-50px);} 100%{transform:translateX(50px);} }
+
+#slider { width:260px; height:350px; object-fit:cover; border-radius:20px; box-shadow:0 0 20px rgba(0,0,0,0.3); margin-bottom:20px; }
+
+.confetti {position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;}
+.heart { position:fixed; color:white; animation:float 6s linear infinite, glow 2s ease-in-out infinite; }
+@keyframes float { 0% {transform:translateY(100vh);opacity:1;} 100%{transform:translateY(-10vh);opacity:0;} }
+@keyframes glow { 0%,100%{text-shadow:0 0 10px #ff4c4c,0 0 20px #ff0000;} 50%{text-shadow:0 0 20px #ff7f7f,0 0 30px #ff3333;} }
